@@ -1,0 +1,9 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Drawer Opened</string>
+    <string name="drawer_close">Drawer Closed</string>
+    <string name="exit_app_title">Exit App</string>
+    <string name="exit_app_message">Are you sure you want to exit?</string>
+    <string name="preference_file_key">com.droidcba.quipu.PREFERENCIES</string>
+    <string name="loading_dialog_msg">Loading...</string>
+</resources>
