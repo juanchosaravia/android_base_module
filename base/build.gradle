@@ -45,11 +45,19 @@ dependencies {
 // Bintray Config:
 
 Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
+def localProps = project.rootProject.file('local.properties')
+def props = null
+if (localProps != null) {
+    props = properties.load(localProps.newDataInputStream());
+}
+def userVal = props ? props.getProperty("bintray.user") : System.getenv('bintray.user')
+def keyVal = props ? props.getProperty("bintray.apikey") : System.getenv('bintray.apikey')
+
+
 
 bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
+    user = userVal
+    key = keyVal
 
     configurations = ['archives']
     pkg {
