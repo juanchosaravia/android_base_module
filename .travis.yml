@@ -1,0 +1,13 @@
+language: android
+
+android:
+  components:
+    - build-tools-22.0.1
+    - android-22
+
+branches:
+  only:
+    - master
+
+script:
+    - ./gradlew clean assembleRelease
