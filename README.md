@@ -3,7 +3,7 @@ Android Base classes to start quicky to develop an app.
 
 ## Gradle
 
-### Add Repository
+### Add Repository:
 Add the repository in your build.gradle:
 
 ```Groovy
