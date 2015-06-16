@@ -47,11 +47,11 @@ dependencies {
 def userVal = ""
 def keyVal = ""
 
-Properties properties = new Properties()
 try {
-    props = properties.load(project.rootProject.file('local.properties').newDataInputStream());
-    userVal = props.getProperty("bintray.user")
-    keyVal = props.getProperty("bintray.apikey")
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream());
+    userVal = properties.getProperty("bintray.user")
+    keyVal = properties.getProperty("bintray.apikey")
 } catch (all) {
     userVal = System.getenv('bintray.user')
     keyVal = System.getenv('bintray.apikey')
