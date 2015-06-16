@@ -1,0 +1,6 @@
+In local.properties add:
+bintray.apikey=API_KEY_FROM_PROFILE
+bintray.user=MY_USERNAME
+
+Then in the console run:
+./gradlew bintrayUpload
