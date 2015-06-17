@@ -30,7 +30,7 @@ allprojects {
 
 ### Include Dependency in your module:
 ```
-compile 'com.droidcba.core:base:1.0.0'
+compile 'com.droidcba.core:base:1.0.+'
 ```
 
 ### Otherwise, download it:
