@@ -10,19 +10,11 @@ Android Base classes to start quickly to develop an app.
 Add the repository in your build.gradle:
 
 ```Groovy
-buildscript {
-    repositories {
-        maven {url "http://dl.bintray.com/juanchosaravia/maven"}
-        ...
-    }
-    dependencies {
-        ...
-    }
-}
-
 allprojects {
     repositories {
         maven {url "http://dl.bintray.com/juanchosaravia/maven"}
+        // android_base_module depends on Icepick so we add the repo:
+        maven {url "https://clojars.org/repo/"}
         ...
     }
 }
