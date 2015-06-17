@@ -9,12 +9,12 @@ def siteUrl = 'https://github.com/juanchosaravia/android_base_module'
 def gitUrl = 'https://github.com/juanchosaravia/android_base_module.git'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdkVersion 16
+        targetSdkVersion 22
         versionCode 1
         versionName version
     }
@@ -28,16 +28,16 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:support-v4:' + rootProject.ext.supportV4Version
-    compile 'com.android.support:appcompat-v7:' + rootProject.ext.appCompatV7Version
-    compile 'com.android.support:design:'  + rootProject.ext.designVersion
+    compile 'com.android.support:support-v4:22.2.+'
+    compile 'com.android.support:appcompat-v7:22.2.+'
+    compile 'com.android.support:design:22.2.+'
 
     // Icepick: for automatic save/restore variables
-    compile 'frankiesardo:icepick:' + rootProject.ext.icepickVersion
-    provided 'frankiesardo:icepick-processor:' + rootProject.ext.icepickVersion
+    compile 'frankiesardo:icepick:3.0.2'
+    provided 'frankiesardo:icepick-processor:3.0.2'
 
     // Butterknife
-    compile 'com.jakewharton:butterknife:' + rootProject.ext.butterKnifeVersion
+    compile 'com.jakewharton:butterknife:6.1.0'
 }
 
 
