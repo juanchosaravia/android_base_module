@@ -1,6 +1,10 @@
 # Android Base Module
 Android Base classes to start quicky to develop an app.
 
+[![Build Status](https://travis-ci.org/juanchosaravia/android_base_module.svg?branch=master)](https://travis-ci.org/juanchosaravia/android_base_module)
+
+
+
 ## Gradle
 
 ### Add Repository:
