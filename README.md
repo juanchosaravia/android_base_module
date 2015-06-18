@@ -7,13 +7,13 @@ Android Base classes to start quickly to develop an app.
 ## Gradle
 
 ### Add Repository:
-Add the repository in your build.gradle:
+This library is already available from jcenter, so just make sure to have it included.
+As this lib depends on Icepick and it's published from another repo, we have to add it here:
 
 ```Groovy
 allprojects {
     repositories {
-        maven {url "http://dl.bintray.com/juanchosaravia/maven"}
-        // android_base_module depends on Icepick so we add the repo:
+        jcenter()
         maven {url "https://clojars.org/repo/"}
         ...
     }
@@ -25,7 +25,7 @@ allprojects {
 compile 'com.droidcba.core:base:1.0.+'
 ```
 
-### Otherwise, download it:
+#### Otherwise, download it:
 
 [ ![Download](https://api.bintray.com/packages/juanchosaravia/maven/android_base_module/images/download.svg) ](https://bintray.com/juanchosaravia/maven/android_base_module/_latestVersion)
 
